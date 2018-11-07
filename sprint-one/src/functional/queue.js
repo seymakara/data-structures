@@ -20,7 +20,7 @@ var Queue = function() {
     var result = storage[tail]
     delete storage[tail]
     tail ++
-    console.log("res", result)
+    // console.log("res", result)
     return result
   };
 
