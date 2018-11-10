@@ -43,7 +43,7 @@ binaryTreeMethods.insert = function(value) {
 binaryTreeMethods.contains = function(value) {
   if (this.value === value) {
     return true;
-  };
+  }
   
   if (value < this.value) {
     if (this.left === null) {
@@ -51,7 +51,7 @@ binaryTreeMethods.contains = function(value) {
     } else {
       return this.left.contains(value);
     }
-  };
+  }
   
   if (value > this.value) {
     if (this.right === null) {
@@ -59,18 +59,17 @@ binaryTreeMethods.contains = function(value) {
     } else {
       return this.right.contains(value); 
     }
-  };
+  }
 };
 
 binaryTreeMethods.depthFirstLog = function(cb) {
   cb (this.value);
   if (this.left) {
     this.left.depthFirstLog(cb);
-  };
+  }
   if (this.right) {
     this.right.depthFirstLog(cb);
-  };
-  
+  }
   
 };
 
