@@ -8,14 +8,14 @@ var Set = function() {
 var setPrototype = {};
 
 setPrototype.add = function(item) {
-  this.storage[item] = item
+  this.storage[item] = item;
 };
 
 setPrototype.contains = function(item) {
   if (item in this.storage) {
-    return true
+    return true;
   }
-  return false
+  return false;
 };
 
 setPrototype.remove = function(item) {
