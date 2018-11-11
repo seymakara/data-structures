@@ -23,5 +23,11 @@ describe('set', function() {
     set.remove('Mel Gibson');
     expect(set.contains('Mel Gibson')).to.equal(false);
   });
+  
+  it('should not add values that are already in a set', function() {
+    set.add('Susan Sarandon');
+    set.add('Susan Sarandon');
+    expect(Object.keys(set.storage).length).to.equal(1);
+  });
 
 });

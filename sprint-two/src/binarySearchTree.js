@@ -19,7 +19,7 @@ var extend = function(to, from) {
 
 var binaryTreeMethods = {};
 
-
+// O(log n)
 binaryTreeMethods.insert = function(value) {
   var child = BinarySearchTree(value);
 
@@ -40,6 +40,7 @@ binaryTreeMethods.insert = function(value) {
   }
 };
 
+//O(log n)
 binaryTreeMethods.contains = function(value) {
   if (this.value === value) {
     return true;
@@ -62,6 +63,7 @@ binaryTreeMethods.contains = function(value) {
   }
 };
 
+//O(n)
 binaryTreeMethods.depthFirstLog = function(cb) {
   cb (this.value);
   if (this.left) {
