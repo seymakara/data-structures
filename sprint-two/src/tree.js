@@ -3,12 +3,13 @@ class Tree {
     this.value = value;
     this.children = []
   }
-
+  // O(1)
   addChild(value) {
     var childNode = new Tree(value)
     this.children.push(childNode)
   };
 
+  // O(n)
   contains(target) {
     if (this.value === target){
       return true
